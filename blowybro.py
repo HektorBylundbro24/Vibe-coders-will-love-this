@@ -163,15 +163,168 @@
 
 ##########################################
 
-#uppgift kapitle 3 7.0
+#uppgift kapitel 3 7.0
 
-celsius = int(input("Hur varmt är det?"))
+#celsius = int(input("Hur varmt är det?"))
 
-if (celsius >= 0 and celsius <= 9):
-    print("Det är cold")
-elif(celsius >= 10 and celsius <= 19):
-    print("Det är inte så cold")
-elif(celsius < 0):
-    print("Det var ICECOLD!")
-elif(celsius > 19):
-    print("Det var crazy HOT!")
+#if (celsius >= 0 and celsius <= 9):
+#    print("Det är cold")
+#elif(celsius >= 10 and celsius <= 19):
+#    print("Det är inte så cold")
+#elif(celsius < 0):
+#    print("Det var ICECOLD!")
+#elif(celsius > 19):
+#    print("Det var crazy HOT!")
+
+##########################################
+
+#uppgift kaptiel 3 8.0
+
+#poäng = int(input("Hur många poäng fick du"))
+
+#if(poäng <= 50):
+#    print("Du har F")
+#elif(poäng >= 50 and poäng <= 59):
+#    print("Du har E")
+#elif(poäng >= 60 and poäng <= 69):
+#    print("Du har D")
+#elif(poäng >= 70 and poäng <= 79):
+#    print("Du har C")
+#elif(poäng >= 80 and poäng <= 89):
+#    print("Du har B")
+#elif(poäng >= 90 and poäng <= 100):
+#    print("Du har A du är crazy cold")
+
+#########################################
+
+#uppgift kapitel 3 13.0
+
+#räknesätt = (input("Vilket räknesätt vill du använda?, + - / *"))
+#tal1 = int(input("Skriv ett tal"))
+#tal2 = int(input("Skeiv ännu ett tal"))
+
+#minus = "-"
+#plus = "+"
+#ggr = "*"
+#division = "/"
+
+#tal3 = tal1 + tal2
+#tal4 = tal1 - tal2 if tal1 > tal2 else tal2 - tal1
+#tal5 = tal1 * tal2
+#tal6 = tal1 / tal2
+
+#if(räknesätt == plus):
+#    print("Det är likamed", tal3)
+#elif(räknesätt == minus):
+#    print("Det är likamed", tal4)
+#elif(räknesätt == ggr):
+#    print("Det är likamed", tal5)
+#elif(räknesätt == division):
+#    print("Det är likamed", tal6)
+#lse:
+#    print("Skriv in ett räknesätt för att använda miniräknaren")
+
+##########################################
+
+#Uppgift kapitel 3 14.0
+
+#import random
+
+#randonummer = random.randint(1,10)
+
+#försök = 3
+
+#while försök > 0:
+#    försök = försök - 1
+#    Gissning = int(input("Säg ett tal från 1 - 10\n"))
+#    if randonummer == Gissning:
+#        print("Du gissade rätt!")
+#    elif Gissning > randonummer:
+#       print("Din gissning är för hög")
+#    elif Gissning < randonummer:
+#        print("Din gissning är för låg")
+    
+#############################################
+
+#uppgift kapitel 3 15.0
+
+#Inge int Moa bro
+
+#############################################
+
+#uppgift kapitel 4 1.0
+
+#heltal = int(input("Skriv ett heltal"))
+
+#talet = 0
+
+#while talet < heltal:
+#    talet = talet + 1
+#    print([talet])
+
+############################################
+
+#uppgift kapitel 4 9.0
+
+#heltal = int(input("Skriv ett heltal "))
+
+#talet = 0
+
+#while talet < heltal:
+#    talet = talet + 1
+#    if talet % 3 == 0:
+#        continue
+#    else:
+#        print([talet])
+
+############################################
+
+#uppgift 5.1 kapitel 5
+
+#print("Du har en \u265a och \u03C0")
+
+############################################
+
+#uppgift 5.2 kapitel 5
+
+#text = input("Skriv din favorite deadlock dialouge \n")
+
+#if text[0] == text[-1]:
+#    print("Dem är samma")
+#else:
+#    print("Du är dum")
+
+############################################
+
+#uppgift 5.3 kapitel 5
+
+#v = "pytonorm"
+
+#v[1:3]
+
+#print(v[1:3:5])
+
+############################################
+
+#uppgift 5.4 kapitel 5
+
+#s = input("Skriv en text pretty please \n")
+#s2 = s[::-1]
+#i = 0
+
+#for c in s2:
+#    if c == " " or c == "\t":
+#        break
+#    i = i + 1
+#if i < len(s2):
+#    print(f"första vita tecknet finns på plats nr {i}")
+#else:
+#    print("Ingen vitt bokstav")
+
+###########################################
+
+#uppgift 5.4 kapitel 5
+
+ord = input("ord")
+len(ord)
+print(len(ord))
