@@ -1,9 +1,9 @@
-maxgissningar = 5
+maxgissningar = 6
 space = ("\n") * 100
-liv = -1
-stavcon = False
+liv = 0
 blankspaceahh = True
 gissningar = 0
+wincon = False
 
 lifeline = [
 r"""
@@ -64,24 +64,34 @@ ordet = list(ordet)
 print(ordet)
 print(space)
 print("Ordet är", len(ordet), "Bokstäver långt ")
-current_pos = int(0)
 
-while liv < maxgissningar:
-    giss = str(input("gissa bokstäverna \n"))
-    for letter in ordet:
+while liv < maxgissningar and wincon == False:
+     stavcon = False
+     giss = str(input("gissa bokstäverna \n"))
+     current_pos = int(0)
+     for letter in ordet:
           if giss == letter:
-            gissningar = gissningar + 1
-            stavcon = True
-            word_progress[current_pos] = giss
-            print("du gissade rätt \n")
-            print(word_progress)
-            current_pos += 1
-               
-               
-          if stavcon == False:
-               liv = liv + 1
-               print("Du gissade fel", lifeline[liv])
+               stavcon = True
+               word_progress[current_pos] = giss
+               print("du gissade rätt \n")
                print(word_progress)
+          current_pos += 1
+
+
+               
+               
+     if stavcon == False:
+          liv = liv + 1
+          print("Du gissade fel", lifeline[liv])
+          print(word_progress)
+
+     
+     if "".join(word_progress) == "".join(ordet):
+          wincon = True
+
+if wincon == True:
+     print("Yippie!")
+     print(f'Ordet var {"".join(ordet)}')
 
 
 
@@ -89,24 +99,3 @@ if liv == maxgissningar:
      print("Du förlorade spelet")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  
