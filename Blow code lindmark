@@ -1,0 +1,3 @@
+hälsning = "Hej"
+print("Hälsning")
+print("Yolo swag")
